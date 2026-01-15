@@ -6,10 +6,10 @@ using System;
 [Serializable]
 public class ServerState
 {
-    public string Id;
-    public float Temperature;
-    public float CpuUsage;
-    public bool IsOnline;
+    public string id;
+    public float temperature;
+    public float cpuUsage;
+    public bool online;
 }
 
 [Serializable]
@@ -25,6 +25,9 @@ public class ServerDataClient : MonoBehaviour
 
     // How often to update (seconds)
     public float updateInterval = 2f;
+
+    // Expose last-fetched data so other components can read it
+    public ServerStateList data;
 
     void Start()
     {
@@ -55,15 +58,18 @@ public class ServerDataClient : MonoBehaviour
             {
                 // Wrap JSON in "servers" key so JsonUtility can parse arrays
                 string json = "{\"servers\":" + request.downloadHandler.text + "}";
-                var data = JsonUtility.FromJson<ServerStateList>(json);
+                var parsed = JsonUtility.FromJson<ServerStateList>(json);
 
-                foreach (var server in data.servers)
+                // store parsed data for others to read
+                this.data = parsed;
+
+                foreach (var server in parsed.servers)
                 {
                     // Find the GameObject with the same name as server.Id
-                    GameObject go = GameObject.Find(server.Id);
+                    GameObject go = GameObject.Find(server.id);
                     if (go != null)
                     {
-                        Debug.Log("Found server GameObject: " + server.Id);
+                        Debug.Log("Found server GameObject: " + server.id);
                     }
                 }
             }
