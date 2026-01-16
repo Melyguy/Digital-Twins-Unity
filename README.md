@@ -59,3 +59,6 @@ DigitalTwin/
 - Visual Studio or VS Code (optional)
 
 ---
+## Showcase
+![Showcase](https://raw.githubusercontent.com/USERNAME/REPO/main/docs/showcase.png)
+
