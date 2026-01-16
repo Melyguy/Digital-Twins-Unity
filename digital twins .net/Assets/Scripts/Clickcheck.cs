@@ -15,13 +15,29 @@ public class Clickcheck : MonoBehaviour
 
     public void Clicked()
     {
-        if(UIFrame.activeSelf == false)
+        if (UIFrame.activeSelf == false)
         {
             UIFrame.SetActive(true);
             Name.text = Server.name;
             Temp.text = "Temperature: " + info.Temperature.ToString("F1") + " °F";
             Usage.text = "CPU Usage: " + info.CpuUsage.ToString("F1") + " %";
-            Online.text = "Status: " + (info.IsOnline ? "Online" : "Offline"); 
+            Online.text = "Status: " + (info.IsOnline ? "Online" : "Offline");
+
+            if (info.Temperature > 80f)
+            {
+                Temp.color = Color.red;
+            }
+            else if (info.Temperature > 60f)
+            {
+                Temp.color = Color.yellow;
+            }
+            else
+            {
+                Temp.color = Color.green;
+            }
+
+            
+
         }
 
     }
