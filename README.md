@@ -8,6 +8,8 @@ This is a mockup / demo and uses simulated data from the backend.
 
 ## Contents:
 - [Features](#Features)
+- [Structure](#Structure)
+- [Setup](#Setup)
 ---
 
 ## Features
