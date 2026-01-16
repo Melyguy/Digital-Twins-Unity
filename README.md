@@ -59,15 +59,3 @@ DigitalTwin/
 - Visual Studio or VS Code (optional)
 
 ---
-
-## Backend Setup
-
-1. Navigate to the backend project:
-
-  ```bash
-   cd Backend/ServerTwin.Api
-   ```
-   2.  Run the backend:
-  ```bash
-      dotnet run
-   ```
