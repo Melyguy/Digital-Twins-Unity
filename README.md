@@ -5,13 +5,22 @@ This project is a simple digital twin of a server rack built with Unity for visu
 
 This is a mockup / demo and uses simulated data from the backend.
 
+More Updates to come!
+Feel free to contribute
 
 ## Contents:
+- [Showcase](#Showcase)
 - [Features](#Features)
 - [Structure](#Structure)
 - [Setup](#Setup)
 ---
-
+## Showcase
+![Showcase](https://raw.githubusercontent.com/Melyguy/Digital-Twins-Unity/main/images/Showcase1.png)
+Here we can see that the servers that are set as online have a green cube in the center. While the servers that are offline have a red cube.
+![Showcase](https://raw.githubusercontent.com/Melyguy/Digital-Twins-Unity/main/images/ControlPanel.png)
+Now we see that if the degrees are over 60 that the text that shows it is yellow and if its over 80 it becomes red.
+![Showcase](https://raw.githubusercontent.com/Melyguy/Digital-Twins-Unity/main/images/ControlPanel2.png)
+---
 ## Features
 - 3D server rack visualization in unity
 - Server GameObjects change color based on **temperature** and **online status**
@@ -59,6 +68,4 @@ DigitalTwin/
 - Visual Studio or VS Code (optional)
 
 ---
-## Showcase
-![Showcase](https://raw.githubusercontent.com/USERNAME/REPO/main/docs/showcase.png)
 
