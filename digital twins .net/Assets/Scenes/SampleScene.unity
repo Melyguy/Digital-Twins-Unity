@@ -2831,8 +2831,8 @@ MonoBehaviour:
   Temperature: 0
   CpuUsage: 0
   IsOnline: 0
-  OnButton: {fileID: 2079965064}
-  OffButton: {fileID: 2026065434}
+  OnButton: {fileID: 2026065434}
+  OffButton: {fileID: 2079965064}
   serverDataClient: {fileID: 1318532878}
 --- !u!114 &1022429208
 MonoBehaviour:
