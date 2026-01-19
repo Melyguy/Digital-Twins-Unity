@@ -20,7 +20,7 @@ public class ServerStateList
 
 public class ServerDataClient : MonoBehaviour
 {
-    public string apiUrl = "https://localhost:7292/api/servers";
+    public string apiUrl = "https://localhost:7292/api/ServerState";
     public float updateInterval = 2f;
     public ServerStateList data;
 
